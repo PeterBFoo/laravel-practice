@@ -29,5 +29,7 @@ Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
 
+Route::view('/social', 'social')->name('social');
+
 // También se puede hacer de esta manera si no hay lógica antes de cargar la vista
 // Route::view('/', 'welcome');
