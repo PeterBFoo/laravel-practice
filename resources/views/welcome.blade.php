@@ -23,10 +23,11 @@
     <body class="antialiased">
     <h1>Home</h1>
     <ul>
-        <li><a href="<?= route('home') ?>">Home</a></li>
-        <li><a href="<?= route('blog') ?>">Blog</a></li>
-        <li><a href="<?= route('about') ?>">Acerca</a></li>
-        <li><a href="<?= route('contact') ?>">Contacto</a></li>
+        {{-- La notación de llaves es para que al renderizar el componente para también evitar inyeccción de código --}}
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="{{ route('blog') }}">Blog</a></li>
+        <li><a href="{{ route('about') }}">Acerca</a></li>
+        <li><a href="{{ route('contact') }}">Contacto</a></li>
     </ul>
     </body>
 </html>

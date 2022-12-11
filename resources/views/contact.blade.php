@@ -22,5 +22,7 @@
 </head>
 <body>
         <h1>Contact</h1>
+        {{-- Inyectar código, como las taxonomías de Hugo --}}
+        @include('partials.nav')
 </body>
 </html>
