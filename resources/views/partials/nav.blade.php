@@ -3,4 +3,4 @@
 <li><a href="{{ route('about') }}">Acerca</a></li>
 <li><a href="{{ route('contact') }}">Contacto</a></li>
 <li><a href="{{ route('social') }}">Social</a></li>
-
+<li><a href="{{ route('communities') }}">Communities</a></li>

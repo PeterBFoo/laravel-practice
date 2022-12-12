@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CommunityController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,11 +27,11 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
-Route::get('/blog', function () {
-    return view('blog');
-})->name('blog');
+Route::get('/blog', [PostController::class, 'index'])->name('blog');
 
 Route::view('/social', 'social')->name('social');
+
+Route::get('/communities', [CommunityController::class, 'index'])->name('communities');
 
 // También se puede hacer de esta manera si no hay lógica antes de cargar la vista
 // Route::view('/', 'welcome');
